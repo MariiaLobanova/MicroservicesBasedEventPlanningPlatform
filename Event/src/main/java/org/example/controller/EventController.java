@@ -1,5 +1,6 @@
 package org.example.controller;
 
+import org.example.model.Client;
 import org.example.model.Event;
 import org.example.playload.CreateEventRequest;
 import org.example.service.EventService;
@@ -22,6 +23,7 @@ public class EventController {
 
         return eventService.getEvents();
     }
+
 
     @GetMapping("/{id}")
     public Event getVendor(@PathVariable("id") Integer id) {
